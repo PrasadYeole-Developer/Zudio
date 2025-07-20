@@ -1,8 +1,10 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div className="w-full h-screen bg-black fixed opacity-70 z-0 select-none"></div>
@@ -20,7 +22,10 @@ const Home = () => {
             </p>
           </div>
           <div className="bottom flex justify-start mt-16">
-            <button className="bg-white text-black text-lg font-semibold px-6 py-2 rounded cursor-pointer hover:bg-[#111] hover:text-gray-200 transition-all duration-300 active:scale-95">
+            <button
+              className="bg-white text-black text-lg font-semibold px-6 py-2 rounded cursor-pointer hover:bg-[#111] hover:text-gray-200 transition-all duration-300 active:scale-95"
+              onClick={() => navigate("/products")}
+            >
               Shop Now
               <i className="ri-store-3-line pl-2"></i>
             </button>

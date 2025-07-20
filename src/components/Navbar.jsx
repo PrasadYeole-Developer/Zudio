@@ -9,8 +9,8 @@ const Navbar = () => {
         <img
           src="https://www.zudio.com/cdn/shop/files/logo_180x.png?v=1613519896"
           alt="Zudio Logo"
-          width={150}
-          height={150}
+          width={120}
+          height={120}
           className="cursor-pointer mr-16"
           onClick={() => window.location.reload()}
         />
