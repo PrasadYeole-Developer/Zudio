@@ -10,7 +10,13 @@ const Product = () => {
   };
   return (
     <>
-      <div className="flex justify-center items-center p-8 select-none">
+      <div className="flex flex-col items-center p-8 select-none">
+        <button
+          className="self-start bg-gray-200 hover:bg-gray-300 text-gray-800 px-4 py-2 rounded transition-colors cursor-pointer flex items-center gap-2"
+          onClick={() => navigate("/")}
+        >
+          <i className="ri-arrow-left-long-line"></i>
+        </button>
         <h1 className="text-4xl font-bold text-[#111]">Products</h1>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 cards p-8">
