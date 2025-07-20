@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="w-full flex justify-between items-center  relative z-10 px-8">
+    <footer className="w-full flex justify-between items-center  relative z-10 px-8 select-none">
     <div className="flex gap-8">
       <a
         href="https://www.instagram.com/myzudio"
