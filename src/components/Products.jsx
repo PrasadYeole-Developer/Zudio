@@ -5,12 +5,12 @@ import { ProductsContext } from "../context/ProductsProvider";
 const Product = () => {
   const { products } = useContext(ProductsContext);
   const navigate = useNavigate();
-  const NavigateHandler = (name) => {
-    navigate(`/product/details/${name}`);
+  const NavigateHandler = (id) => {
+    navigate(`/products/details/${id}`);
   };
   return (
     <>
-      <div className="flex justify-center items-center p-8">
+      <div className="flex justify-center items-center p-8 select-none">
         <h1 className="text-4xl font-bold text-[#111]">Products</h1>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 cards p-8">
@@ -53,7 +53,7 @@ const Product = () => {
                   </span>
                   <button
                     className="inline-flex items-center gap-2 bg-[#222] hover:bg-[#333] text-white px-4 py-2 rounded cursor-pointer transition-colors duration-300"
-                    onClick={() => NavigateHandler(product.name)}
+                    onClick={() => NavigateHandler(product.id)}
                   >
                     View Details
                     <svg

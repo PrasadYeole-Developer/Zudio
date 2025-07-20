@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import { createContext } from "react";
+import { nanoid } from "nanoid";
 
 export const ProductsContext = createContext(null);
 
 const ProductsProvider = ({ children }) => {
   const [products, setProducts] = useState([
     {
+      id: nanoid(),
       name: "Mens Classic Polo Tee - Navy",
       price: 599,
       category: "Men",
@@ -16,6 +18,7 @@ const ProductsProvider = ({ children }) => {
       tags: ["casual", "summer", "trending"],
     },
     {
+      id: nanoid(),
       name: "Mens Slim Fit Jeans - Washed Blue",
       price: 1299,
       category: "Men",
@@ -26,6 +29,7 @@ const ProductsProvider = ({ children }) => {
       tags: ["denim", "trending", "everyday"],
     },
     {
+      id: nanoid(),
       name: "Mens Geometric Print Shirt",
       price: 849,
       category: "Men",
@@ -36,6 +40,7 @@ const ProductsProvider = ({ children }) => {
       tags: ["summer", "printed", "party-wear"],
     },
     {
+      id: nanoid(),
       name: "Womens Floral Maxi Dress - Coral",
       price: 999,
       category: "Women",
@@ -46,6 +51,7 @@ const ProductsProvider = ({ children }) => {
       tags: ["summer", "floral", "bohemian"],
     },
     {
+      id: nanoid(),
       name: "Womens Embroidered Kurti - Turquoise",
       price: 1199,
       category: "Women",
@@ -56,6 +62,7 @@ const ProductsProvider = ({ children }) => {
       tags: ["ethnic", "trending", "festive"],
     },
     {
+      id: nanoid(),
       name: "Womens Denim Jacket - Light Blue",
       price: 1599,
       category: "Women",
@@ -66,6 +73,7 @@ const ProductsProvider = ({ children }) => {
       tags: ["layering", "denim", "new-arrival"],
     },
     {
+      id: nanoid(),
       name: "Kids Graphic T-Shirt - Red",
       price: 499,
       category: "Kids",
@@ -76,6 +84,7 @@ const ProductsProvider = ({ children }) => {
       tags: ["kids", "graphic", "playtime"],
     },
     {
+      id: nanoid(),
       name: "Kids Fit-and-Flare Dress - Pink",
       price: 699,
       category: "Kids",
@@ -86,6 +95,7 @@ const ProductsProvider = ({ children }) => {
       tags: ["girls", "floral", "occasion"],
     },
     {
+      id: nanoid(),
       name: "Kids Stretchy Jeans - Indigo",
       price: 799,
       category: "Kids",
@@ -94,7 +104,7 @@ const ProductsProvider = ({ children }) => {
       image:
         "https://images.pexels.com/photos/2100063/pexels-photo-2100063.jpeg?auto=compress&w=600&q=80",
       tags: ["kids", "denim", "comfortable"],
-    }
+    },
   ]);
   return (
     <ProductsContext.Provider value={{ products, setProducts }}>
