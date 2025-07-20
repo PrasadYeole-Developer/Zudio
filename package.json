@@ -10,11 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@remixicon/react": "^4.6.0",
     "@tailwindcss/vite": "^4.1.7",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-hook-form": "^7.60.0",
     "react-router-dom": "^7.7.0",
+    "remix": "^2.16.8",
+    "remixicon": "^4.6.0",
     "tailwindcss": "^4.1.7"
   },
   "devDependencies": {
