@@ -8,7 +8,7 @@ const Home = () => {
       <div className="w-full h-screen bg-black fixed opacity-70 z-0 select-none"></div>
       <div className="w-full min-h-screen bg-[url('https://images.pexels.com/photos/1488467/pexels-photo-1488467.jpeg')] bg-cover bg-center p-8 select-none">
         <Navbar />
-        <main className="w-full py-32 px-64 relative z-10 flex flex-col gap-8 h-full">
+        <main className="w-full py-30 px-64 relative z-10 flex flex-col gap-8 h-full">
           <div className="top flex flex-col gap-4">
             <h1 className="text-white text-7xl font-bold">
               Fresh Drops. <br /> Real Looks.{" "}

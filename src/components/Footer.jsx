@@ -33,7 +33,7 @@ const Footer = () => {
         </a>
       </div>
       <div className="flex gap-8 items-center relative">
-        <p className="text-white text-sm">© 2025 Zudio. All rights reserved.</p>
+        <p className="text-white text-sm tracking-wider font-semibold">© 2025 Zudio. All rights reserved.</p>
       </div>
     </footer>
   );
