@@ -5,9 +5,18 @@ import Footer from "../components/Footer";
 const About = () => {
   return (
     <>
-      
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="w-full h-full object-cover fixed top-0 left-0 z-10"
+      >
+        <source src="/backgroundVideo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
 
-      <div className="w-full min-h-screen bg-[#111] p-8 select-none font-black text-white flex flex-col relative z-10">
+      <div className="w-full min-h-screen p-8 select-none font-black text-white flex flex-col relative z-10">
         <Navbar />
         <div className="top flex flex-col gap-4 px-8 py-16">
           <h1 className="text-white text-7xl font-bold mb-6">
