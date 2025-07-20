@@ -19,18 +19,18 @@ const Login = () => {
         <div className="flex justify-center items-center">
           <form
             onSubmit={handleSubmit(LoginHandler)}
-            className="flex w-fit flex-col items-center justify-center bg-white rounded-2xl p-8"
+            className="flex w-fit flex-col items-center justify-center bg-white rounded-xl p-8"
           >
             <input
               {...register("email", { required: true })}
               type="email"
-              className="text-lg outline-none mt-2 p-2 bg-[#111] rounded placeholder:font-normal"
+              className="text-lg outline-none mt-2 p-2 bg-[#111] rounded placeholder:font-bold"
               placeholder="Enter your email"
             />
             <input
               {...register("password", { required: true })}
               type="password"
-              className="text-lg outline-none mt-2 p-2 mb-12 bg-[#111] rounded placeholder:font-normal"
+              className="text-lg outline-none mt-2 p-2 mb-12 bg-[#111] rounded placeholder:font-bold"
               placeholder="Enter password"
             />
             <button className="bg-blue-950 text-white px-4 py-2 mt-4 rounded-lg hover:bg-[#222] transition duration-300 cursor-pointer">
