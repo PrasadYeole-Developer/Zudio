@@ -68,7 +68,7 @@ const ProductDetails = () => {
             </div>
           </div>
           <button
-            className="mt-6 bg-[#222] hover:bg-[#333] text-white px-6 py-3 rounded font-semibold transition-colors cursor-pointer"
+            className="mt-6 bg-[#222] hover:bg-[#333] text-white px-6 py-3 rounded font-semibold transition-colors duration-300 cursor-pointer"
             onClick={() => toast.success("Product Added to Cart")}
           >
             Add to Cart

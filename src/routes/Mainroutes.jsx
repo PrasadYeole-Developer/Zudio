@@ -1,17 +1,23 @@
 import React from "react";
-import Home from "../components/Home";
-import About from "../components/About";
-import Products from "../components/Products";
-import ProductDetails from "../components/ProductDetails";
+import Home from "../pages/Home";
+import About from "../pages/About";
+import Products from "../pages/Products";
+import ProductDetails from "../pages/ProductDetails";
 import { Routes, Route } from "react-router-dom";
+import Login from "../pages/Login";
+import Register from "../pages/Register";
+import PageNotFound from "../pages/PageNotFound";
 
 const Mainroutes = () => {
   return (
-    <Routes>
+    <Routes>  
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/products" element={<Products />} />
       <Route path="/products/details/:id" element={<ProductDetails />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
+      <Route path="*" element={<PageNotFound />} />
     </Routes>
   );
 };

@@ -13,8 +13,7 @@ const ProductsProvider = ({ children }) => {
       category: "Men",
       description:
         "A soft cotton polo shirt in deep navy, perfect for casual outings or weekend style.",
-      image:
-        "./public/bluepolo.jpg",
+      image: "/bluepolo.jpg",
       tags: ["casual", "summer", "trending"],
     },
     {
@@ -24,8 +23,7 @@ const ProductsProvider = ({ children }) => {
       category: "Men",
       description:
         "Comfort-stretch denim with a modern slim fit, ideal for day-to-night transitions.",
-      image:
-        "./public/bluewashed.jpg",
+      image: "/bluewashed.jpg",
       tags: ["denim", "trending", "everyday"],
     },
     {
@@ -35,8 +33,7 @@ const ProductsProvider = ({ children }) => {
       category: "Men",
       description:
         "A lightweight shirt with a bold geometric pattern, great for summer parties or vacations.",
-      image:
-        "./public/geometric.jpg",
+      image: "/geometric.jpg",
       tags: ["summer", "printed", "party-wear"],
     },
     {
@@ -46,8 +43,7 @@ const ProductsProvider = ({ children }) => {
       category: "Women",
       description:
         "A flowing maxi dress in coral with a vibrant floral print – perfect for brunches or beach days.",
-      image:
-        "./public/coralmaxi.jpg",
+      image: "/coralmaxi.jpg",
       tags: ["summer", "floral", "bohemian"],
     },
     {
@@ -57,8 +53,7 @@ const ProductsProvider = ({ children }) => {
       category: "Women",
       description:
         "A chic cotton kurti with delicate embroidery and a straight fit, ideal for ethnic-chic style.",
-      image:
-        "./public/turquoise.jpg",
+      image: "/turquoise.jpg",
       tags: ["ethnic", "trending", "festive"],
     },
     {
@@ -68,8 +63,7 @@ const ProductsProvider = ({ children }) => {
       category: "Women",
       description:
         "A light washed denim jacket with a relaxed fit, perfect for layering in cooler weather.",
-      image:
-        "./public/lightblue.jpg",
+      image: "/lightblue.jpg",
       tags: ["layering", "denim", "new-arrival"],
     },
     {
@@ -79,8 +73,7 @@ const ProductsProvider = ({ children }) => {
       category: "Kids",
       description:
         "A vibrant red tee featuring a fun cartoon graphic, made from soft cotton for all-day play.",
-      image:
-        "./public/kidred.jpg",
+      image: "/kidred.jpg",
       tags: ["kids", "graphic", "playtime"],
     },
     {
@@ -90,8 +83,7 @@ const ProductsProvider = ({ children }) => {
       category: "Kids",
       description:
         "A cute pink dress with a flared skirt and floral print, perfect for birthday parties and outings.",
-      image:
-        "./public/pinkdress.jpg",
+      image: "/pinkdress.jpg",
       tags: ["girls", "floral", "occasion"],
     },
     {
@@ -101,8 +93,7 @@ const ProductsProvider = ({ children }) => {
       category: "Kids",
       description:
         "Soft indigo denim jeans with a bit of stretch for comfort, ideal for school or casual play.",
-      image:
-        "./public/darkjeans.jpg",
+      image: "/darkjeans.jpg",
       tags: ["kids", "denim", "comfortable"],
     },
   ]);
