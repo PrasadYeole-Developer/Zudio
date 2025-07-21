@@ -11,7 +11,7 @@ const About = () => {
         muted
         loop
         playsInline
-        className="w-full h-full object-cover fixed top-0 left-0 z-10"
+        className="w-full h-full object-cover fixed top-0 left-0 z-10 pointer-events-none"
       >
         <source src="/backgroundVideo.mp4" type="video/mp4" />
         Your browser does not support the video tag.

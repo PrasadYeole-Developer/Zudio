@@ -7,7 +7,7 @@ const variants = {
 };
 
 const transition = {
-  duration: 0.5,
+  duration: 0.3,
   ease: "easeInOut",
 };
 

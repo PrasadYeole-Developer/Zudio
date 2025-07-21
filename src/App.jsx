@@ -1,14 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Mainroutes from "./routes/Mainroutes";
 import Lenis from "lenis";
 
 const App = () => {
-  const lenis = new Lenis();
-  function raf(time) {
-    lenis.raf(time);
+  useEffect(() => {
+    const lenis = new Lenis();
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
     requestAnimationFrame(raf);
-  }
-  requestAnimationFrame(raf);
+  }, []);
 
   return (
     <>
