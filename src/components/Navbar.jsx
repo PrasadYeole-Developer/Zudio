@@ -12,7 +12,7 @@ const Navbar = () => {
           width={120}
           height={120}
           className="cursor-pointer mr-16"
-          onClick={() => window.location.reload()}
+          onClick={() => (window.location.href = "/")}
         />
         <NavLink
           className="hover:text-gray-300 uppercase text-sm tracking-widest transition-colors duration-300"

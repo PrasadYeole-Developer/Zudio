@@ -4,11 +4,13 @@ import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const Login = () => {
   const navigate = useNavigate();
   const { register, reset, handleSubmit } = useForm();
   const LoginHandler = () => {
+    toast.success("Logged In!");
     reset();
     navigate("/products");
   };
@@ -33,7 +35,9 @@ const Login = () => {
               className="text-lg outline-none mt-2 p-2 mb-12 bg-[#111] rounded placeholder:font-bold"
               placeholder="Enter password"
             />
-            <button className="bg-blue-950 text-white px-4 py-2 mt-4 rounded-lg hover:bg-[#222] transition duration-300 cursor-pointer">
+            <button
+              className="bg-blue-950 text-white px-4 py-2 mt-4 rounded-lg hover:bg-[#111] transition duration-300 cursor-pointer active:scale-98"
+            >
               Login
             </button>
             <p className="text-gray-800 mt-4 font-semibold">

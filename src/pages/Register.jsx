@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { nanoid } from "nanoid";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const Register = () => {
   const navigate = useNavigate();
@@ -12,6 +13,7 @@ const Register = () => {
   const RegisterHandler = (user) => {
     user.id = nanoid();
     reset();
+    toast.success("Registered Successfully!");
     navigate("/login");
   };
   return (
@@ -41,7 +43,7 @@ const Register = () => {
               className="text-lg outline-none mt-2 p-2 mb-12 bg-[#111] rounded placeholder:font-bold"
               placeholder="Enter password"
             />
-            <button className="bg-blue-950 text-white px-4 py-2 mt-4 rounded-lg hover:bg-[#222] transition duration-300 cursor-pointer">
+            <button className="bg-blue-950 text-white px-4 py-2 mt-4 rounded-lg hover:bg-[#111] transition duration-300 cursor-pointer active:scale-98">
               Register
             </button>
             <p className="text-gray-800 mt-4 font-semibold">
