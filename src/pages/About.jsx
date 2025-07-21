@@ -1,10 +1,11 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import PageTransition from "../components/PageTransition";
 
 const About = () => {
   return (
-    <>
+    <PageTransition>
       <video
         autoPlay
         muted
@@ -43,7 +44,7 @@ const About = () => {
       <div className="w-full bg-[#111] p-8">
         <Footer />
       </div>
-    </>
+    </PageTransition>
   );
 };
 

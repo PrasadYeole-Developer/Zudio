@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { ProductsContext } from "../context/ProductsProvider";
+import PageTransition from "../components/PageTransition";
 
 const Product = () => {
   const { products } = useContext(ProductsContext);
@@ -9,7 +10,7 @@ const Product = () => {
     navigate(`/products/details/${id}`);
   };
   return (
-    <>
+    <PageTransition>
       <div className="flex flex-col items-center p-8 select-none">
         <button
           className="self-start bg-gray-200 hover:bg-gray-300 text-gray-800 px-4 py-2 rounded transition-colors cursor-pointer flex items-center gap-2"
@@ -82,7 +83,7 @@ const Product = () => {
           </div>
         ))}
       </div>
-    </>
+    </PageTransition>
   );
 };
 

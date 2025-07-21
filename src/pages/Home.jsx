@@ -2,11 +2,12 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { useNavigate } from "react-router-dom";
+import PageTransition from "../components/PageTransition";
 
 const Home = () => {
   const navigate = useNavigate();
   return (
-    <>
+    <PageTransition>
       <div className="w-full h-screen bg-black fixed opacity-70 z-0 select-none"></div>
       <div className="w-full min-h-screen bg-[url('https://images.pexels.com/photos/1488467/pexels-photo-1488467.jpeg')] bg-cover bg-center p-8 select-none">
         <Navbar />
@@ -33,7 +34,7 @@ const Home = () => {
         </main>
         <Footer />
       </div>
-    </>
+    </PageTransition>
   );
 };
 

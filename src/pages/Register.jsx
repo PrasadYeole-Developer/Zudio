@@ -6,6 +6,7 @@ import { useForm } from "react-hook-form";
 import { nanoid } from "nanoid";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import PageTransition from "../components/PageTransition";
 
 const Register = () => {
   const navigate = useNavigate();
@@ -22,7 +23,7 @@ const Register = () => {
     navigate("/login");
   };
   return (
-    <>
+    <PageTransition>
       <div className="w-full min-h-screen bg-[#111] p-8 select-none font-black text-white flex flex-col justify-between">
         <Navbar />
         <div className="flex justify-center items-center">
@@ -76,7 +77,7 @@ const Register = () => {
         </div>
         <Footer />
       </div>
-    </>
+    </PageTransition>
   );
 };
 

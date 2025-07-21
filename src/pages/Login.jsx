@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import PageTransition from "../components/PageTransition";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -20,7 +21,7 @@ const Login = () => {
     navigate("/products");
   };
   return (
-    <>
+    <PageTransition>
       <div className="w-full min-h-screen bg-[#111] p-8 select-none font-black text-white flex flex-col justify-between">
         <Navbar />
         <div className="flex justify-center items-center">
@@ -68,7 +69,7 @@ const Login = () => {
         </div>
         <Footer />
       </div>
-    </>
+    </PageTransition>
   );
 };
 
