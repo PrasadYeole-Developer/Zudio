@@ -9,7 +9,12 @@ import { toast } from "react-toastify";
 
 const Register = () => {
   const navigate = useNavigate();
-  const { register, reset, handleSubmit } = useForm();
+  const {
+    register,
+    reset,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
   const RegisterHandler = (user) => {
     user.id = nanoid();
     reset();
@@ -38,11 +43,23 @@ const Register = () => {
               placeholder="Enter your email"
             />
             <input
-              {...register("password", { required: true })}
+              {...register("password", {
+                required: true,
+                pattern: {
+                  value:
+                    /^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+\-=\]{};':"\\|,.<>/?]).{8,}$/,
+                  message: "Min 8 chars, 1 uppercase, 1 number, 1 symbol.",
+                },
+              })}
               type="password"
-              className="text-lg outline-none mt-2 p-2 mb-12 bg-[#111] rounded placeholder:font-bold"
+              className="text-lg outline-none mt-2 p-2 mb-2 bg-[#111] rounded placeholder:font-bold"
               placeholder="Enter password"
             />
+            {errors.password && (
+              <p className="text-red-700 font-medium text-sm text-center">
+                {errors.password.message}
+              </p>
+            )}
             <button className="bg-blue-950 text-white px-4 py-2 mt-4 rounded-lg hover:bg-[#111] transition duration-300 cursor-pointer active:scale-98">
               Register
             </button>

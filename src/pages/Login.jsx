@@ -8,7 +8,12 @@ import { toast } from "react-toastify";
 
 const Login = () => {
   const navigate = useNavigate();
-  const { register, reset, handleSubmit } = useForm();
+  const {
+    register,
+    reset,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
   const LoginHandler = () => {
     toast.success("Logged In!");
     reset();
@@ -30,14 +35,24 @@ const Login = () => {
               placeholder="Enter your email"
             />
             <input
-              {...register("password", { required: true })}
+              {...register("password", {
+                required: true,
+                pattern: {
+                  value:
+                    /^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+\-=\]{};':"\\|,.<>/?]).{8,}$/,
+                  message: "Min 8 chars, 1 uppercase, 1 number, 1 symbol.",
+                },
+              })}
               type="password"
-              className="text-lg outline-none mt-2 p-2 mb-12 bg-[#111] rounded placeholder:font-bold"
+              className="text-lg outline-none mt-2 p-2 mb-2 bg-[#111] rounded placeholder:font-bold"
               placeholder="Enter password"
             />
-            <button
-              className="bg-blue-950 text-white px-4 py-2 mt-4 rounded-lg hover:bg-[#111] transition duration-300 cursor-pointer active:scale-98"
-            >
+            {errors.password && (
+              <p className="text-red-700 font-medium text-sm text-center">
+                {errors.password.message}
+              </p>
+            )}
+            <button className="bg-blue-950 text-white px-4 py-2 mt-4 rounded-lg hover:bg-[#111] transition duration-300 cursor-pointer active:scale-98">
               Login
             </button>
             <p className="text-gray-800 mt-4 font-semibold">
