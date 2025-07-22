@@ -12,21 +12,28 @@ const Home = () => {
   const textRef = useRef(null);
   const { tl } = useContext(GSAPContext);
   useGSAP(() => {
-    tl.from(titleRef.current, {
-      opacity: 0,
-      yPercent: 100,
-      duration: 1,
-      delay: 1,
-      ease: "power2.inOut",
-    });
-
-    tl.from(textRef.current, {
-      opacity: 0,
-      yPercent: 800,
-      duration: 2,
-      delay: 0.5,
-      ease: "power2.inOut",
-    });
+    tl.from(
+      titleRef.current,
+      {
+        opacity: 0,
+        yPercent: 100,
+        duration: 1,
+        delay: 1,
+        ease: "power2.inOut",
+      },
+      "title"
+    );
+    tl.from(
+      textRef.current,
+      {
+        opacity: 0,
+        yPercent: 800,
+        duration: 2,
+        delay: 0.5,
+        ease: "power2.inOut",
+      },
+      "title"
+    );
   }, []);
   return (
     <PageTransition>
