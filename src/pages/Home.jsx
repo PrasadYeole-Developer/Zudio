@@ -10,6 +10,7 @@ const Home = () => {
   const navigate = useNavigate();
   const titleRef = useRef(null);
   const textRef = useRef(null);
+  const buttonRef = useRef(null);
   const { tl } = useContext(GSAPContext);
   useGSAP(() => {
     tl.from(
@@ -18,7 +19,6 @@ const Home = () => {
         opacity: 0,
         yPercent: 100,
         duration: 1,
-        delay: 1,
         ease: "power2.inOut",
       },
       "title"
@@ -28,12 +28,17 @@ const Home = () => {
       {
         opacity: 0,
         yPercent: 800,
-        duration: 2,
-        delay: 0.5,
+        duration: 1,
         ease: "power2.inOut",
       },
       "title"
     );
+    tl.from(buttonRef.current, {
+      opacity: 0,
+      yPercent: 100,
+      duration: 0.5,
+      ease: "sine.inOut",
+    });
   }, []);
   return (
     <PageTransition>
@@ -54,9 +59,9 @@ const Home = () => {
               pieces designed for those who dress to express.
             </p>
           </div>
-          <div className="bottom flex justify-start mt-16">
+          <div ref={buttonRef} className="bottom flex justify-start mt-16">
             <button
-              className="bg-white text-black text-lg font-semibold px-6 py-2 rounded cursor-pointer hover:bg-[#111] hover:text-gray-200 transition-all duration-300 active:scale-95"
+              className="btn bg-white text-black text-lg font-semibold px-6 py-2 rounded cursor-pointer hover:bg-[#111] hover:text-gray-200 transition-all duration-300 active:scale-95"
               onClick={() => navigate("/login")}
             >
               Shop Now
