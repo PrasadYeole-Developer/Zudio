@@ -21,7 +21,7 @@ const Footer = () => {
     });
   }, []);
   return (
-    <footer className="w-full flex justify-between items-center  relative z-10 px-8 select-none">
+    <footer className="w-full flex justify-between items-center  relative z-10 px-8 gap-8 select-none">
       <div className="flex gap-8 overflow-hidden">
         <a
           href="https://www.instagram.com/myzudio"
