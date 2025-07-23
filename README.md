@@ -63,19 +63,32 @@ An animated, fully responsive web application for brand zudio built with **React
 ## Screenshots
 
 - Home Page
-  [Home](./public//PagesDemo/homepage.png)
+
+![Home](./assets/homepage.png)
+
 - About Page
-  [About](./public//PagesDemo/aboutpage.png)
+
+![About](./assets/aboutpage.png)
+
 - Products Page
-  [Products](./public//PagesDemo/productspage.png)
+
+![Products](./assets/productspage.png)
+
 - Product Details Page
-  [ProductDetails](./public//PagesDemo/productdetailspage.png)
+
+![ProductDetails](./assets/productdetailspage.png)
+
 - Login Page
-  [Login](./public//PagesDemo/loginpage.png)
+
+![Login](./assets/loginpage.png)
+
 - Register Page
-  [Register](./public//PagesDemo/registerpage.png)
+
+![Register](./assets/registerpage.png)
+
 - PageNotFound Page
-  [PageNotFound](./public//PagesDemo/pagenotfoundpage.png)
+
+![PageNotFound](./assets/pagenotfoundpage.png)
 
 ## Packages Used
 
