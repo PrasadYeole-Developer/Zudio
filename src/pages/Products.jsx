@@ -23,7 +23,7 @@ const Product = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 cards p-8">
         {products.map((product) => (
           <div
-            key={product.name}
+            key={product.id}
             className="group transition-all duration-300 h-full flex card"
           >
             <div className="bg-white text-[#111] rounded shadow-md hover:shadow-lg flex flex-col overflow-hidden h-full min-h-[520px] w-full transform transition-all duration-300 group-hover:scale-[1.02]">
