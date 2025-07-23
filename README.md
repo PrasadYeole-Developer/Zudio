@@ -1,6 +1,6 @@
 # Zudio - Your One-Stop Shop for All Your Clothing Needs
 
-An animated, fully responsive web application for brand zudio built with **React**, **Framer Motion**, **Lenis smooth scrolling**, and **React Router v6**. This project includes user authentication, product browsing, animated page transitions, and detailed product views.
+An animated and fully responsive web application for brand zudio built with **React**, **Framer Motion**, **Lenis smooth scrolling**, and **React Router v6**. This project includes user authentication, product browsing, animated page transitions, and detailed product views.
 
 ---
 
