@@ -46,7 +46,9 @@ const Home = () => {
     <PageTransition>
       <div className="w-full h-screen bg-black fixed opacity-70 z-0 select-none"></div>
       <div className="w-full min-h-screen bg-[url('https://images.pexels.com/photos/1488467/pexels-photo-1488467.jpeg')] bg-cover bg-center p-4 sm:p-6 md:p-8 select-none flex flex-col">
-        <Navbar />
+        <div className="relative z-20">
+          <Navbar />
+        </div>
         <main className="w-full flex-1 flex flex-col gap-8 h-full justify-center items-center md:items-start py-12 md:py-18 lg:py-24 px-2 sm:px-8 md:px-16 lg:px-32 relative z-10">
           <div className="top flex flex-col gap-4 overflow-hidden w-full max-w-3xl">
             <h1

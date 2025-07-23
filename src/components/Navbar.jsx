@@ -13,7 +13,7 @@ const Navbar = () => {
           alt="Zudio Logo"
           width={120}
           height={120}
-          className="cursor-pointer mr-4 sm:mr-16"
+          className="cursor-pointer mr-8 sm:mr-24"
           onClick={() => (window.location.href = "/")}
         />
         <div className="hidden md:flex gap-8 sm:gap-12 items-center cursor-pointer text-white font-sans font-semibold">
@@ -78,14 +78,14 @@ const Navbar = () => {
         >
           About
         </NavLink>
-        {/* <button
+      </div>
+        <button
         aria-label="Open Menu"
         className="hidden md:block relative group w-8 h-8 cursor-pointer active:scale-90 transition-scale duration-300"
       >
         <i className="ri-menu-line text-white text-2xl absolute inset-0 transition-all duration-300 group-hover:opacity-0 group-hover:scale-0"></i>
         <i className="ri-menu-3-line text-white text-2xl absolute inset-0 opacity-0 scale-0 transition-all duration-300 group-hover:opacity-100 group-hover:scale-100"></i>
-      </button> */}
-      </div>
+      </button>
     </nav>
   );
 };

@@ -21,7 +21,7 @@ const Footer = () => {
     });
   }, []);
   return (
-    <footer className="w-full flex justify-between items-center  relative z-10 px-8 gap-8 select-none">
+    <footer className="w-full flex justify-between items-center relative z-10 px-8 gap-8 select-none">
       <div className="flex gap-8 overflow-hidden">
         <a
           href="https://www.instagram.com/myzudio"
@@ -51,7 +51,7 @@ const Footer = () => {
           <img src="/twitter.svg" alt="Twitter" width={28} height={28} />
         </a>
       </div>
-      <div className="overflow-hidden flex gap-8 items-center relative">
+      <div className="overflow-hidden flex gap-8 items-center justify-end relative">
         <p className="footer-text text-white text-sm tracking-wider font-semibold">
           © 2025 Zudio. All rights reserved.
         </p>
