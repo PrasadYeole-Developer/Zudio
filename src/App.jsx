@@ -4,7 +4,12 @@ import Lenis from "lenis";
 
 const App = () => {
   useEffect(() => {
-    const lenis = new Lenis();
+    const lenis = new Lenis({
+      smooth: true,
+      gestureOrientation: "vertical",
+      touchMultiplier: 1.5,
+      smoothTouch: true,
+    });
 
     function raf(time) {
       lenis.raf(time);
@@ -12,6 +17,10 @@ const App = () => {
     }
 
     requestAnimationFrame(raf);
+
+    return () => {
+      lenis.destroy();
+    };
   }, []);
 
   return (
