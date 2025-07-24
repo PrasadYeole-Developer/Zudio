@@ -5,6 +5,7 @@ An animated and fully responsive web application for brand zudio built with **Re
 ---
 
 ### Live Demo - [Zudio](https://zudio-five.vercel.app/)
+> This project was built as part of the **Frontend Hackathon by Sheriyans Coding School**.
 
 ## Tech Stack
 
@@ -25,38 +26,6 @@ An animated and fully responsive web application for brand zudio built with **Re
 - Form handling and validation using **React Hook Form**
 - Toast notifications using **React Toastify**
 - Responsive UI across devices
-
----
-
-## Folder Structure
-
-├── zudio/
-│ ├── public/
-│ └── src/
-│ ├── components/  
-│ │ ├── Navbar.jsx
-│ │ ├── Footer.jsx
-│ │ └── PageTransition.jsx
-│ │
-│ ├── context/  
-│ │ ├── ProductsProvider.jsx
-│ │ └── GSAPProvider.jsx
-│ │
-│ ├── pages/  
-│ │ ├── Home.jsx
-│ │ ├── About.jsx
-│ │ ├── Products.jsx
-│ │ ├── ProductDetails.jsx
-│ │ ├── Login.jsx
-│ │ ├── Register.jsx
-│ │ └── PageNotFound.jsx
-│ │
-│ ├── routes/  
-│ │ └── Mainroutes.jsx
-│ │
-│ ├── App.jsx  
-│ ├── index.css  
-│ └── main.jsx
 
 ---
 
